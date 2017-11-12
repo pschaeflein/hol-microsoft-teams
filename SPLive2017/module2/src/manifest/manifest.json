@@ -1,0 +1,46 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.0/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.0",
+  "id": "fdd0f5b4-1652-bbb3-e903-8d9a67fe1e9e",
+  "version": "0.0.1",
+  "packageName": "io.ngrok.24004e19",
+  "developer": {
+    "name": "Office Developer",
+    "websiteUrl": "https://24004e19.ngrok.io",
+    "privacyUrl": "https://24004e19.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://24004e19.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "Module 2",
+    "full": "Module 2"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-20x20.png",
+    "color": "icon-96x96.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://24004e19.ngrok.io/module2Config.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "24004e19.ngrok.io"
+  ]
+}
