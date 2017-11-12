@@ -75,15 +75,5 @@ The app is now sideloaded into the Microsoft Teams application and the Tab is av
 1. Tabs are not automatically displayed for the Team. To add the tab, click on the **General** channel in the Team.
 1. Click the **+** icon at the end of the tab strip.
 1. In the Tab gallery, sideloaded tabs are displayed in the **Tabs for your team** section. Tabs in this section are arranged alphabetically. Select the tab created in this lab.
-
-    ![](Images/Exercise1-13.png)
-
 1. The generator creates a configurable tab. When the Tab is added to the Team, the configuration page is displayed. Enter any value in the **Setting** box and click **Save**.
-
-    ![](Images/Exercise1-14.png)
-
 1. The value entered will then be displayed in the Tab window.
-
-    ![](Images/Exercise1-15.png)
-
-This concludes Module 1.
