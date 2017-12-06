@@ -19,7 +19,11 @@ This lab extends the bot from Module 4 with Microsoft Teams functionality called
           break;
 
         case ActivityTypes.Invoke:
-          await ComposeHelpers.HandleInvoke(activity);
+          var composeResponse = await ComposeHelpers.HandleInvoke(activity);
+          var stringContent = new StringContent(composeResponse);
+          HttpResponseMessage httpResponseMessage = new HttpResponseMessage(HttpStatusCode.OK);
+          httpResponseMessage.Content = stringContent;
+          return httpResponseMessage;
           break;
 
         default:

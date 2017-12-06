@@ -37,7 +37,7 @@ Before registering the bot, note the URL configured for the solution in Visual S
 1. Complete the Bot profile section, entering a Display name, Bot handle and description.
 
 1. Complete the Configuration section.
-    1. For the Messaging endpoint, use the Forwarding https address from ngrok prepended to the route to the MessagesController in the Visual Studio project.
+    1. For the Messaging endpoint, use the Forwarding https address from ngrok prepended to the route to the MessagesController in the Visual Studio project. For example: https://[address-from-grok].ngrok.io/api/messages
     1. Click the **Create Microsoft App ID and password button**. This opens a new browser tab/window.
     1. In the new browser tab/window the application is registered in Azure Active Directory. Click **Generate an app password to continue**.
     1. An app password is generated. Copy the password and save it. You will use it in a subsequent step.

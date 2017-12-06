@@ -1,4 +1,5 @@
 import { Guid } from "./guid";
+import { AADAppConfig } from "./aadAppConfig";
 
 /**
 * Implementation of the AdminConsent page
@@ -14,14 +15,12 @@ export class AdminConsent {
     public requestConsent(tenantId:string) {
       let host = "https://" + window.location.host;
       let redirectUri = "https://" + window.location.host + "/adminconsent.html";
-      let clientId = "11dcd3a3-c794-4aec-a7b8-9d66499ed559";
       let state = Guid.NewGuid();
-      localStorage.setItem("adminConsent.state",state);
 
       var consentEndpoint = "https://login.microsoftonline.com/common/adminconsent?" +
-                            "client_id=" + clientId +
-                            "&state=" + state +
-                            "&redirect_uri=" + redirectUri;
+                        "client_id=" + AADAppConfig.clientID +
+                        "&state=" + state +
+                        "&redirect_uri=" + redirectUri;
 
       window.location.replace(consentEndpoint);
     }

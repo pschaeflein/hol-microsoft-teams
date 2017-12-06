@@ -322,7 +322,7 @@ With the tab configured, the content page can now render information as selected
         ```typescript
         configuration?: string;
         groupId?: string;
-        token?: string;
+        token: string;
 
         /**
         * Constructor for Tab that initializes the Microsoft Teams script
@@ -360,7 +360,7 @@ With the tab configured, the content page can now render information as selected
         public refresh() {
           let graphElement = document.getElementById("graph");
           graphElement!.innerText = "Loading...";
-          if (this.token === null) {
+          if (this.token === "") {
             microsoftTeams.authentication.authenticate({
               url: "/auth.html",
               width: 400,
@@ -401,7 +401,7 @@ With the tab configured, the content page can now render information as selected
         ```
 
 1. Add a new file to the **web** folder named **auth.html**
-    1. Add the following to the **adminconsent.html** file.
+    1. Add the following to the **auth.html** file.
 
         ```html
         <!DOCTYPE html>
@@ -413,7 +413,6 @@ With the tab configured, the content page can now render information as selected
           <!-- endinject -->
         </head>
         <body>
-          <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.1.1/js/msal.min.js"></script>
           <script src="https://statics.teams.microsoft.com/sdk/v1.0/js/MicrosoftTeams.min.js"></script>
           <!-- inject:js -->
           <!-- endinject -->
